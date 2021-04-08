@@ -1,13 +1,246 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Revalia&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./src/index.css" />
   </head>
   <body>
-    <script src="./libs/jquery-3.5.0.min.js"></script>
-    <script src="./src/index.js"></script>
+    <header class="header">
+      <div class="container">
+        <div class="header__links">
+          <a href="index.html" class="header__logo">WD</a>
+          <nav class="header__nav">
+            <a href="#" class="header__link">Главная</a>
+            <a href="#" class="header__link">Об авторе</a>
+            <a href="#" class="header__link">Работы</a>
+            <a href="#" class="header__link">Процесс</a>
+            <a href="#" class="header__link">Контакты</a>
+          </nav>
+          <div class="header__burger">
+            <img src="./img/burger.png" alt="burger" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="design">
+      <div class="container">
+        <div class="design__global">
+          <div class="disign__pic">
+            <img src="./img/Frame.svg" alt="NoteBook" />
+          </div>
+          <div class="design__text">
+            <h1>Дизайн и верстка</h1>
+            <p>
+              Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+              вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
+              на латинице с начала XVI века.
+            </p>
+            <input class="design__btn" type="submit" value="Написать мне" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-me">
+      <div class="container">
+        <div class="about-me__text">
+          <h3>Обо мне</h3>
+          <p>
+            Lorem Ipsum - это текст-"рыба", часто используемый в печати и <br />
+            вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
+            <br />
+            на латинице с начала XVI века.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects">
+      <div class="projects__item">
+        <div class="projects__pic">
+          <img src="./img/projects.svg" alt="projects" />
+        </div>
+        <div class="projects__pic">
+          <img src="./img/projects.svg" alt="projects" />
+        </div>
+        <div class="projects__pic">
+          <img src="./img/projects.svg" alt="projects" />
+        </div>
+        <div class="projects__pic">
+          <img src="./img/projects.svg" alt="projects" />
+        </div>
+        <div class="projects__pic">
+          <img src="./img/projects.svg" alt="projects" />
+        </div>
+        <div class="projects__pic">
+          <img src="./img/projects.svg" alt="projects" />
+        </div>
+      </div>
+    </section>
+
+    <section class="skills">
+      <div class="container">
+        <div class="skills__global">
+          <div class="skills__title">
+            <h5>Мои навыки</h5>
+            <div class="skills__box">
+              <h6>Adobe Photoshop</h6>
+              <div class="skills__progress"></div>
+            </div>
+            <div class="skills__box">
+              <h6>Adobe Photoshop</h6>
+              <div class="skills__progress"></div>
+            </div>
+            <div class="skills__box">
+              <h6>Adobe Photoshop</h6>
+              <div class="skills__progress"></div>
+            </div>
+          </div>
+          <div class="skills__photo">
+            <img src="./img/Rectangle 3.jpg" alt="photo" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="my-work">
+      <div class="container">
+        <h5>Как я работаю</h5>
+        <p>
+          Lorem Ipsum - это текст-"рыба", часто используемый в печати и <br />
+          вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
+          <br />
+          на латинице с начала XVI века.
+        </p>
+        <div class="my-work__video">
+          <iframe
+            src="https://www.youtube.com/embed/GQJrzIJEsJ0"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery">
+      <div class="gallery__items">
+        <div class="gallery__overlay">
+          <img src="./img/eye.svg" alt="" />
+        </div>
+        <img src="./img/sticks.svg" alt="" />
+      </div>
+      <div class="gallery__items">
+        <div class="gallery__overlay">
+          <img src="./img/eye.svg" alt="" />
+        </div>
+        <img src="./img/notebooks.svg" alt="" />
+      </div>
+      <div class="gallery__items">
+        <div class="gallery__overlay">
+          <img src="./img/eye.svg" alt="" />
+        </div>
+        <img src="./img/sticks.svg" alt="" />
+      </div>
+      <div class="gallery__items">
+        <div class="gallery__overlay">
+          <img src="./img/eye.svg" alt="" />
+        </div>
+        <img src="./img/notebooks.svg" alt="" />
+      </div>
+      <div class="gallery__items">
+        <div class="gallery__overlay">
+          <img src="./img/eye.svg" alt="" />
+        </div>
+        <img src="./img/notebooks.svg" alt="" />
+      </div>
+      <div class="gallery__items">
+        <div class="gallery__overlay">
+          <img src="./img/eye.svg" alt="" />
+        </div>
+        <img src="./img/sticks.svg" alt="" />
+      </div>
+      <div class="gallery__items">
+        <div class="gallery__overlay">
+          <img src="./img/eye.svg" alt="" />
+        </div>
+        <img src="./img/notebooks.svg" alt="" />
+      </div>
+      <div class="gallery__items">
+        <div class="gallery__overlay">
+          <img src="./img/eye.svg" alt="" />
+        </div>
+        <img src="./img/sticks.svg" alt="" />
+      </div>
+    </section>
+
+    <section class="marks">
+      <div class="container">
+        <div class="marks__box">
+          <img class="marks__pic" src="./img/microsoft.svg" alt="" />
+          <img class="marks__pic" src="./img/microsoft.svg" alt="" />
+          <img class="marks__pic" src="./img/microsoft.svg" alt="" />
+          <img class="marks__pic" src="./img/microsoft.svg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="form">
+      <div class="container">
+        <h4>Хотите веб-сайт?</h4>
+        <p class="form__text">
+          Lorem Ipsum - это текст-"рыба", часто используемый в печати и <br />
+          вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
+          <br />
+          на латинице с начала XVI века.
+        </p>
+        <div class="form__global-box">
+          <form class="form__inputs" method="GET">
+            <input
+              class="form__name-name"
+              type="text"
+              name="name"
+              placeholder="Ваше имя"
+            />
+            <input
+              class="form__name-mail"
+              type="text"
+              name="e-mail"
+              placeholder="Ваш e-mail"
+            />
+            <p class="form__area">
+              <textarea
+                name="messenge"
+                cols="90"
+                rows="10"
+                placeholder="Сообщение"
+              ></textarea>
+            </p>
+            <input class="form__btn" type="submit" value="Отправить" />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__text">
+        <h4>Иванов Иван</h4>
+        <p>(с) 2018. Все права защищены.</p>
+      </div>
+      <div class="footer__logo">
+        <img src="./img/Vk.svg" alt="vk" />
+        <img src="./img/Vk.svg" alt="vk" />
+        <img src="./img/Vk.svg" alt="vk" />
+      </div>
+    </footer>
   </body>
 </html>
