@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="overflow" lang="ru">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,19 +17,21 @@
         <div class="header__links">
           <a href="index.html" class="header__logo">WD</a>
           <nav class="header__nav">
-            <a href="#" class="header__link">Главная</a>
-            <a href="#" class="header__link">Об авторе</a>
-            <a href="#" class="header__link">Работы</a>
-            <a href="#" class="header__link">Процесс</a>
-            <a href="#" class="header__link">Контакты</a>
+            <a href="#design" class="header__link">Главная</a>
+            <a href="#about-me" class="header__link">Об авторе</a>
+            <a href="#my-work" class="header__link">Процесс</a>
+            <a href="#gallery" class="header__link">Работы</a>
+            <a href="#form" class="header__link">Контакты</a>
           </nav>
-          <!--<img class="header__x" src="./img/krestik.png" alt="X" />-->
           <img class="header__burger" src="./img/burger.png" alt="burger" />
         </div>
+        <!--<div class="header__x">
+          <img src="./img/krestik.png" alt="X" />
+        </div>-->
       </div>
     </header>
 
-    <section class="design">
+    <section id="design" class="design">
       <div class="container">
         <div class="design__global">
           <div class="disign__pic">
@@ -48,7 +50,7 @@
       </div>
     </section>
 
-    <section class="about-me">
+    <section id="about-me" class="about-me">
       <div class="container">
         <div class="about-me__text">
           <h3>Обо мне</h3>
@@ -110,7 +112,7 @@
       </div>
     </section>
 
-    <section class="my-work">
+    <section id="my-work" class="my-work">
       <div class="container">
         <h5>Как я работаю</h5>
         <p>
@@ -131,7 +133,7 @@
       </div>
     </section>
 
-    <section class="gallery">
+    <section id="gallery" class="gallery">
       <div class="gallery__items">
         <div class="gallery__overlay">
           <img src="./img/eye.svg" alt="" />
@@ -193,7 +195,7 @@
       </div>
     </section>
 
-    <section class="form">
+    <section id="form" class="form">
       <div class="container">
         <h4>Хотите веб-сайт?</h4>
         <p class="form__text">
@@ -241,7 +243,11 @@
         <a href="http://vk.vom"><img src="./img/Vk.svg" alt="vk"/></a>
       </div>
     </footer>
-    <script src="./src/jquery-3.6.0.min.js"></script>
+
+    <div class="arrowUp">Вверх</div>
+
+    <script src="./libs/jquery-3.6.0.min.js"></script>
+    <script src="./libs/jquery.ba-throttle-debounce.min.js"></script>
     <script src="./src/index.js"></script>
   </body>
 </html>

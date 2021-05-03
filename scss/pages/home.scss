@@ -30,6 +30,9 @@ html.overflow {
     font-size: 16px;
     padding-top: 79px;
     position: relative;
+    @media screen and (min-width: 993px) {
+      display: block !important;
+    }
 
     @media screen and (max-width: 992px) {
       display: none;
@@ -83,13 +86,14 @@ html.overflow {
       display: block;
     }
   }
-
   /*&__x {
     max-width: 40px;
     cursor: pointer;
+    display: flex;
     justify-content: end;
+    align-items: flex-end;
     z-index: 4000;
-    display: none;
+    //display: none;
     @media screen and (max-width: 992px) {
     }
   }*/
@@ -448,7 +452,7 @@ html.overflow {
 }
 
 .form {
-  padding: 100px 0;
+  padding: 70px 0;
   background-color: #eeeff1;
 
   @media screen and (max-width: 992px) {
@@ -560,6 +564,26 @@ html.overflow {
     display: block;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+.arrowUp {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border: 3px solid color black;
+  background-color: #34547a;
+  color: white;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+
+  &.active {
+    display: flex;
   }
 }
 
