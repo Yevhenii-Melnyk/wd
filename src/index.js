@@ -5,6 +5,7 @@ jQuery(document).ready(function($) {
   const $a = $(".header__nav a");
   const $arrowUp = $(".arrowUp");
   const $headerNav = $(".header__nav a");
+  const $btn = $(".design__text input");
 
   $burger.on("click", function() {
     $nav.toggle();
@@ -32,6 +33,13 @@ jQuery(document).ready(function($) {
   });
 
   $headerNav.on("click", function(e) {
+    e.preventDefault();
+    const target = $(this).attr("href");
+    console.log($(target).offset().top);
+    $("html, body").animate({ scrollTop: $(target).offset().top }, 500);
+  });
+
+  $btn.on("click", function(e) {
     e.preventDefault();
     const target = $(this).attr("href");
     console.log($(target).offset().top);
